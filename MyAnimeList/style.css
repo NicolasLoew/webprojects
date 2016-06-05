@@ -58,3 +58,11 @@ border: #BCDBE6 solid 10px;
 }
 /*Center table end*/
 
+.tabpanel.table.th {
+  text-align: center;
+}
+
+/*Table head centre*/
+.centre-align {
+  text-align: center;
+}
