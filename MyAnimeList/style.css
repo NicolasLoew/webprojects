@@ -1,0 +1,60 @@
+/*Credits: This code was distributed by Ympker*/
+/*List of people I would like to thank:
+Cornex: https://github.com/eklundkristoffer
+*/
+
+/* Main color that is being used: #2970CC & white*/
+
+/*Style from top to bottom*/
+
+body { padding-top: 70px; }
+    /*.jumbotron {
+      color: #2c3e50;
+      background: #ecf0f1;
+
+    }*/
+    .navbar-inverse {
+      background: #2970CC;
+      color: white;
+    }
+    .navbar-inverse .navbar-brand, .navbar-inverse a{
+      color:white;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+      color: white;
+    } 
+
+
+.jumbotron {
+color: white;
+background-color: #2970CC;
+text-align: center;
+border: #BCDBE6 solid 10px;
+}
+
+.logo {
+      text-align: center;
+
+    }
+
+.logo span {
+  color: white;
+ }
+
+/*Styling the "Currently Watching"*/
+
+.nav li a {
+    color: white;
+
+}
+
+/*Center table*/
+.nav.nav-tabs {
+    text-align: center;
+}
+.nav.nav-tabs > li {
+    float: none;
+    display: inline-block;
+}
+/*Center table end*/
+
