@@ -122,7 +122,16 @@ Cornex: https://github.com/eklundkristoffer
                   <tr>
                     <td class="col-md-4"><img src="opicon.png" width="70" height="70"></td>
                     <td class="col-md-4">One Piece</td>
-                    <td class="col-md-4">743&nbsp;<i class="fa fa-plus" aria-hidden="true"></i></td>
+                    <td class="col-md-4"><a id="clicks">0</a>
+    <script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+<i class="fa fa-plus" onClick="onClick()" aria-hidden="true"></i> 
+ &nbsp;</td>
                   </tr>
                   <tr>
                     <td class="col-md-4"><img src="naruto.png" width="70" height="70"></td>

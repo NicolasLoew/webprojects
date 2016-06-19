@@ -67,3 +67,11 @@ border: #BCDBE6 solid 10px;
   text-align: center;
 }
 /*Table head end*/
+
+.clicks {
+  color: white;
+}
+
+#clicks {
+  color: white;
+}
