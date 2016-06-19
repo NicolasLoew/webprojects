@@ -37,14 +37,49 @@ Cornex: https://github.com/eklundkristoffer
  <div class="collapse navbar-collapse" id="bs-nav-demo">
 			
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Register</a></li>
-					<li><a href="#"><i class="fa fa-unlock" aria-hidden="true"></i>&nbsp;Login</a></li>
+					<li><a id="myLink" href="#" onclick="MyFunction();"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Register</a>
+
+          <!-- Onclick to trigger function and then script to define it! -->
+<script>
+    var username;
+    var password;
+
+    function MyFunction() {
+        username = prompt("Please choose a username");
+        password = prompt("Please choose a password");
+    }
+</script>
+
+
+          </li>
+					<li><a id="myPw" href="#" onclick="MyPassword();"><i class="fa fa-unlock" aria-hidden="true"></i>&nbsp;Login</a>
+          <script>
+          function MyPassword() {
+            var verifyuser = prompt("Please enter your username")
+            var verifypw = prompt("Please enter your password")
+            if (verifyuser === username && verifypw === password) {
+              alert("You have been logged in!")
+            }
+
+            else {
+              alert("Incorrect username or Password. Please try again!")
+            }
+
+          }
+
+
+          </script>
+
+
+          </li>
 				</ul>
 			</div>
 
 </div>
 </nav>
 <!-- Navbar End -->
+
+
 
 <!-- Let's add a jumbotron with the logo inside :D -->
 
@@ -194,13 +229,7 @@ Cornex: https://github.com/eklundkristoffer
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td class="col-md-4"><img src="okarin.png" width="100" height="100"></td>
-                    <td class="col-md-4">Okabe Rintarou</td>
-                    <td class="col-md-4"><em>"We can share in the intellectual experience that is Dr. Pepper..."</td>
-                  </tr>
-                  <tr>
-                    <td class="col-md-4"><img src="kamina.png" width="100" height="100"></td>
+                    <td class="col-md-4"><img src="kamina.PNG" width="100" height="100"></td>
                     <td class="col-md-4">Kamina</td>
                     <td class="col-md-4">"<em>Don't be distracted by the what-if's, should-have's, and if-only's. The one thing you choose for yourself - that is the truth of your universe.</em>"</td>
                   </tr>
@@ -209,6 +238,13 @@ Cornex: https://github.com/eklundkristoffer
                     <td class="col-md-4">Monkey D. Luffy</td>
                     <td class="col-md-4">"<em>An island from a dream within a dream? I could never pass up a great adventure like this!</em>"</td>
                   </tr>
+
+ <tr>
+                    <td class="col-md-4"><img src="okarin.png" width="100" height="100"></td>
+                    <td class="col-md-4">Okabe Rintarou</td>
+                    <td class="col-md-4"><em>"We can share in the intellectual experience that is Dr. Pepper..."</td>
+                  </tr>
+                  <tr>
 
                   </tbody>
                   </table>
