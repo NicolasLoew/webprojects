@@ -14,6 +14,8 @@ Cornex: https://github.com/eklundkristoffer
 <link rel="stylesheet" type="text/css" href="bootstrap.css">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/todos.css">
+
 <script src="credits.js"></script>
 
 <!-- End of head -->
@@ -86,7 +88,7 @@ Cornex: https://github.com/eklundkristoffer
 <div class="container">
 <div class="jumbotron">
   <h1 class="logo"><img src="logonew.png"> YmpkersAnimeList </h1>
-    <p class="logo">This Animelist was created with <i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp; by <a href="https://github.com/NicolasLoew"><span>Ympker</span></a></p> 
+    <p class="logo">This Animelist was created with <i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp; by Ympker</p> 
  </div> <!-- Closes out the Jumbotron -->
  </div> <!-- Closes out the Container -->
 
@@ -101,8 +103,8 @@ Cornex: https://github.com/eklundkristoffer
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#watching" aria-controls="watching" role="tab" data-toggle="tab">Currently Watching</a></li>
-    <li role="presentation"><a href="#topten" aria-controls="topten" role="tab" data-toggle="tab">My Top 10</a></li>
-    <li role="presentation"><a href="#topquotes" aria-controls="topquotes" role="tab" data-toggle="tab">My favorite Anime Quotes</a></li>
+    <li role="presentation"><a href="#topten" aria-controls="topten" role="tab" data-toggle="tab">Plan to Watch</a></li>
+    <li role="presentation"><a href="#topquotes" aria-controls="topquotes" role="tab" data-toggle="tab">My Top10</a></li>
    
   </ul>
 
@@ -110,156 +112,62 @@ Cornex: https://github.com/eklundkristoffer
   <div class="tab-content">
   <!-- Here goes Currentl>y Watching Content -->
     <div role="tabpanel" class="tab-pane active" id="watching">
-  <table class="table">
-                <thead>
-                  <tr>
-                    <th class="col-md-4 centre-align">Image</th>
-                    <th class="col-md-4 centre-align">Name</th>
-                    <th class="col-md-4 centre-align">Episode</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="col-md-4"><img src="opicon.png" width="70" height="70"></td>
-                    <td class="col-md-4">One Piece</td>
-                    <td class="col-md-4"><a id="clicks">0</a>
-    <script type="text/javascript">
-    var clicks = 0;
-    function onClick() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    };
-    </script>
-<i class="fa fa-plus" onClick="onClick()" aria-hidden="true"></i> 
- &nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td class="col-md-4"><img src="naruto.png" width="70" height="70"></td>
-                    <td class="col-md-4">Naruto</td>
-                    <td class="col-md-4">108&nbsp;<i class="fa fa-plus" aria-hidden="true"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="col-md-4"><img src="gungrave.png" width="70" height="70"></td>
-                    <td class="col-md-4">Gungrave</td>
-                    <td class="col-md-4">4&nbsp;<i class="fa fa-plus" aria-hidden="true"></i></td>
-                  </tr>
-                </tbody>
-              </table>
+
+    <!-- Title + Input field -->
+<div id="todos-container">
+  <h1>Currently Watching <i class="fa fa-plus"></i></h1>
+  <input type="text" placeholder="Type Anime Name to add, toggle to remove or click Anime to cross out">
+<!-- Actual list -->
+  <ul>
+    <li><span><i class="fa fa-trash"></i></span> One Piece</li>
+    <li><span><i class="fa fa-trash"></i></span> Fairy Tail</li>
+    <li><span><i class="fa fa-trash"></i></span> Boku no Pico</li>
+  </ul>
+</div>
+
 
 
     </div>
 
     <!-- Here goes Top 10 Animes Content -->
     <div role="tabpanel" class="tab-pane" id="topten">
-     <table class="table">
-                <thead>
-                  <tr>
-                    <th class="col-md-4 centre-align">Image</th>
-                    <th class="col-md-4 centre-align">Name</th>
-                    <th class="col-md-4 centre-align">Rank</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="col-md-4"><img src="opicon.png" width="70" height="70"></td>
-                    <td class="col-md-4">One Piece</td>
-                    <td class="col-md-4">1&nbsp;</i></td>
-                  </tr>
-                  <tr>
-                    <td class="col-md-4"><img src="gurrenlagann.png" width="70" height="70"></td>
-                    <td class="col-md-4">Tengen Toppa Gurren Lagann</td>
-                    <td class="col-md-4">2&nbsp;</td>
-                  </tr>
-                 <tr>
-                    <td class="col-md-4"><img src="steinsgate.png" width="70" height="70"></td>
-                    <td class="col-md-4">Steins;Gate</td>
-                    <td class="col-md-4">3&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td class="col-md-4"><img src="fmab.png" width="70" height="70"></td>
-                    <td class="col-md-4">Full Metal Alchemist Brotherhood</td>
-                    <td class="col-md-4">4&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td class="col-md-4"><img src="fairytail.png" width="70" height="70"></td>
-                    <td class="col-md-4">Fairy Tail</td>
-                    <td class="col-md-4">5&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td class="col-md-4"><img src="knb.png" width="70" height="70"></td>
-                    <td class="col-md-4">Kuroko no Basket</td>
-                    <td class="col-md-4">6&nbsp;</td>
-                  </tr>
 
-                  <tr>
-                    <td class="col-md-4"><img src="fatezero.png" width="70" height="70"></td>
-                    <td class="col-md-4">Fate/Zero</td>
-                    <td class="col-md-4">7&nbsp;</td>
-                  </tr>
+<!-- Title + Input field -->
+<div id="todos-container">
+  <h1>Plan to Watch <i class="fa fa-plus"></i></h1>
+  <input type="text" placeholder="Type Anime Name to add, toggle to remove or click Anime to cross out">
+<!-- Actual list -->
+  <ul>
+    <li><span><i class="fa fa-trash"></i></span> Gungrave</li>
+    <li><span><i class="fa fa-trash"></i></span> Bleach</li>
+    <li><span><i class="fa fa-trash"></i></span> Boku no Hero Academia</li>
+  </ul>
+</div>
 
-                  <tr>
-                    <td class="col-md-4"><img src="cg.png" width="70" height="70"></td>
-                    <td class="col-md-4">Code/Geass</td>
-                    <td class="col-md-4">8&nbsp;</td>
-                  </tr>
-
-                  <tr>
-                    <td class="col-md-4"><img src="bl.png" width="70" height="70"></td>
-                    <td class="col-md-4">Black Lagoon</td>
-                    <td class="col-md-4">9&nbsp;</td>
-                  </tr>
-
-                  <tr>
-                    <td class="col-md-4"><img src="soma.png" width="70" height="70"></td>
-                    <td class="col-md-4">Shokugeki no Soma</td>
-                    <td class="col-md-4">10&nbsp;</td>
-                  </tr>
-
-
-
-
-
-                </tbody>
-              </table>
-
-   
-
-    </div>
+  </div>
 
     <!-- Here goes Top Anime Quotes Content -->
     <div role="tabpanel" class="tab-pane" id="topquotes">
-    	
-<table class="table">
-                <thead>
-                  <tr>
-                    <th class="col-md-4 centre-align">Image</th>
-                    <th class="col-md-4 centre-align">Character Name</th>
-                    <th class="col-md-4 centre-align">Quote</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <td class="col-md-4"><img src="kamina.PNG" width="100" height="100"></td>
-                    <td class="col-md-4">Kamina</td>
-                    <td class="col-md-4">"<em>Don't be distracted by the what-if's, should-have's, and if-only's. The one thing you choose for yourself - that is the truth of your universe.</em>"</td>
-                  </tr>
-                 <tr>
-                    <td class="col-md-4"><img src="luffy.png" width="100" height="100"></td>
-                    <td class="col-md-4">Monkey D. Luffy</td>
-                    <td class="col-md-4">"<em>An island from a dream within a dream? I could never pass up a great adventure like this!</em>"</td>
-                  </tr>
 
- <tr>
-                    <td class="col-md-4"><img src="okarin.png" width="100" height="100"></td>
-                    <td class="col-md-4">Okabe Rintarou</td>
-                    <td class="col-md-4"><em>"We can share in the intellectual experience that is Dr. Pepper..."</td>
-                  </tr>
-                  <tr>
-
-                  </tbody>
-                  </table>
-
-
-    </div>
+    <!-- Title + Input field -->
+<div id="todos-container">
+  <h1>My Top 10 <i class="fa fa-plus"></i></h1>
+  <input type="text" placeholder="Type Anime Name to add, toggle to remove or click Anime to cross out">
+<!-- Actual list -->
+  <ul>
+    <li><span><i class="fa fa-trash"></i></span> One Piece</li>
+    <li><span><i class="fa fa-trash"></i></span> Katekyo Hitman Reborn</li>
+    <li><span><i class="fa fa-trash"></i></span> Fairy Tail</li>
+    <li><span><i class="fa fa-trash"></i></span> Steins Gate</li>
+    <li><span><i class="fa fa-trash"></i></span> Kuroko no Basket</li>
+    <li><span><i class="fa fa-trash"></i></span> Diamond no Ace</li>
+    <li><span><i class="fa fa-trash"></i></span> Katanagatari</li>
+    <li><span><i class="fa fa-trash"></i></span> Adventure of Sinbad</li>
+    <li><span><i class="fa fa-trash"></i></span> 7 Deadly Sins</li>
+    <li><span><i class="fa fa-trash"></i></span> Code Geass</li>
+  </ul>
+</div>
+    	</div>
     
   </div>
 
@@ -276,6 +184,7 @@ Cornex: https://github.com/eklundkristoffer
 <!-- Othere resources -->
 <!-- jQuery CDN needs to come before js in html because js depends on it!!! -->
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="./assets/js/todos.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
